@@ -1,0 +1,18 @@
+header {
+  background-color: $dark;
+
+  .container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 12px;
+  }
+
+  svg {
+    @media (min-width: 768px) {
+      width: auto;
+    }
+    height: 32px;
+    transition: width $transition;
+    width: 100%;
+  }
+}

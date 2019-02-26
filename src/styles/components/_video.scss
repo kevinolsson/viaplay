@@ -1,0 +1,55 @@
+.video {
+  position: relative;
+  overflow: hidden;
+
+  &__details {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: calc(100% - 24px);
+    left: 0;
+    margin: 12px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    svg {
+      fill: $light;
+      height: 32px;
+      width: 32px;
+    }
+
+    h3,
+    p {
+      margin: 4px 0;
+    }
+  }
+
+  &__teaser {
+    height: calc(100% - 4px);
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+
+    video {
+      width: 100%;
+    }
+  }
+
+  a {
+    color: $light;
+    display: inline-block;
+  }
+
+  img {height: 100%;
+    object-fit: fill;
+    transition: opacity $transition;
+    width: 100%;
+    @media (min-width: 768px) {
+      &:hover {
+        opacity: .1;
+      }
+    }
+  }
+}

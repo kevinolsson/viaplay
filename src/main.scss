@@ -1,0 +1,19 @@
+@import 'styles/variables/animations';
+@import 'styles/variables/colors';
+
+@import 'styles/components/header';
+@import 'styles/components/grid';
+@import 'styles/components/video';
+@import 'styles/components/footer';
+
+body {
+  color: $light;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
